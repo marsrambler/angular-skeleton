@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from "./../shared.service";
- 
+
 @Component({
   selector: 'app-weather',
   templateUrl: './weather.component.html',
@@ -17,10 +17,10 @@ export class WeatherComponent implements OnInit {
   op_temp: string = "";
   constructor(private _sharedService: SharedService) {
   }
- 
+
   ngOnInit() {
   }
- 
+
   callWeatherService() { 
     this._sharedService.findWeather(this.id_city, this.id_state)
       .subscribe(
@@ -37,6 +37,6 @@ export class WeatherComponent implements OnInit {
         console.log(error);
       }
       ); 
-  }
- 
+  }  
+
 }

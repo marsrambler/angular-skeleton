@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from "./../shared.service";
- 
+
 @Component({
   selector: 'app-currency',
   templateUrl: './currency.component.html',
-  styles: [] 
+  styles: []
 })
 export class CurrencyComponent implements OnInit {
-  
+
   id_currency: string = "";
   my_result: any;
   constructor(private _sharedService: SharedService) {
   }
- 
+
   ngOnInit() {
   }
- 
+
   callCurrencyService() {  
     this._sharedService.getCurrencyExchRate(this.id_currency.toUpperCase())
       .subscribe(
@@ -27,6 +27,6 @@ export class CurrencyComponent implements OnInit {
         console.log(error);
       }
       ); 
- 
-  }
+  }  
+
 }

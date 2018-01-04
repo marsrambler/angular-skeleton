@@ -9,7 +9,7 @@ export class SharedService {
     weatherURL2 = "%2C%20";
     weatherURL3 = "%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
     findMovieURL1 = "http://www.omdbapi.com/?t=";
-    findMovieURL2 = "&y=&plot=short&r=json"; 
+    findMovieURL2 = "&apikey=10d8dbfe"; ;//"&y=&plot=short&r=json&apikey=10d8dbfe"; 
     currencyURL = "http://api.fixer.io/latest?symbols="; 
     totReqsMade: number = 0;
     constructor(private _http: Http) { }
