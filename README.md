@@ -22,20 +22,19 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-# not work 
-## Deploying to Github Pages
+## Deploying to Github Pages (not work now)
 #Run `ng github-pages:deploy` to deploy to Github Pages.
 
-# Debugging unit test within visual studio code (vcs)
+## Debugging unit test within visual studio code (vcs)
 
-Run `ng test --browsers Chrome_with_debugging` to start karma/jasmine in Chrome which listening at port 9222
-Set breakpoint in unit test files
+Run `ng test --browsers Chrome_with_debugging` to start karma/jasmine in Chrome which listening at port 9222  
+Set breakpoint in unit test files  
 In vcs debug enviroment, `Launch Chrome against localhost`, will hit the breakpoint
 
-# Debugging e2e test with in visual studio code (vcs)
+## Debugging e2e test with in visual studio code (vcs)
 
-Run `ng serve` to start http service
-Set breakpoint in e2e test
+Run `ng serve` to start http service  
+Set breakpoint in e2e test  
 In vcs debug enviroment, `Launch protractor`, will hit the breakpoint
 
 ## Further help
