@@ -30,13 +30,6 @@ module.exports = function (config) {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
     },
-    customLaunchers: {
-      Chrome_with_debugging: {
-        base: 'Chrome',
-        flags: ['--remote-debugging-port=9222'],
-        debug: true
-      }
-    },
     angularCli: {
       config: './angular-cli.json',
       environment: 'dev'
